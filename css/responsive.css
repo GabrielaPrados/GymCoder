@@ -1,0 +1,151 @@
+/* ----------------------------MEDIA TABLETS----------------------- */
+
+@media (min-width: 850px) {
+  /* ----------------------------layout----------------------- */
+  #body {
+    grid-template-areas:
+      "nav header "
+      " nav main "
+      "nav footer ";
+    grid-template-columns: 185px auto;
+    grid-template-rows: 50vh auto auto;
+  }
+
+  #header,
+  #main,
+  #footer {
+    max-width: max(100vw - 210px);
+    padding: 3%;
+  }
+
+  /* ---------------------------------------------NAV------------------------------------------ */
+  #nav {
+    width: 180px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ulNav {
+    display: block;
+  }
+
+  #nav button {
+    display: none;
+  }
+
+  .ulNav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .ulNav li a::before {
+    font-size: 2rem;
+  }
+
+  /* ---------------------------------------------FOOTER------------------------------------------ */
+  .bodyPaginas footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  .bodyPaginas #redes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bodyPaginas #redes div {
+    width: 100%;
+  }
+
+  .bodyPaginas #redes div img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bodyPaginas footer h4 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20%;
+  }
+
+  /* ---------------------------------------------GRID PAGINAS------------------------------------ */
+  .imgInstalaciones,
+  #sectionPrecios,
+  #sectionPrecios,
+  .mainContacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    padding-bottom: 10%;
+  }
+
+  .mainContacto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ----------------------------------------MEDIA LARGE------------------------------------------ */
+
+@media (min-width: 1200px) {
+  /* ----------------------------------------HEADER------------------------------------------ */
+  #header {
+    background-image: url(../assets/imgs/fitnesspngegg.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    display: flex;
+    align-items: center;
+  }
+
+  h1,
+  h2 {
+    padding: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: min(2rem + 3vw);
+  }
+
+  /* ---------------------------------------------GRID PAGINAS------------------------------------------ */
+  #imgClases {
+    display: grid;
+  }
+
+  .imgInstalaciones,
+  #imgClases,
+  #sectionPrecios,
+  .mainContacto {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #sectionPrecios {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .mainContacto {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------------------------------------GRID PAGINA CLASES--------------------------------- */
+  #imgClases div img {
+    max-width: 100%;
+    max-height: 190px;
+  }
+
+  /* -----------------------------------GRID PAGINA PRECIOS--------------------------------- */
+  .mainPrecios section .divAbsolut {
+    font-size: min(1rem + 1vw);
+  }
+
+  /* ----------------------------------GRID PAGINA PRECIOS--------------------------------- */
+  .mainContacto .sectionForm form,
+  .mainContacto iframe {
+    margin-top: 0;
+  }
+}

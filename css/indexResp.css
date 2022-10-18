@@ -1,0 +1,113 @@
+/* ----------------------------MEDIA TABLETS----------------------- */
+
+@media (min-width: 850px) {
+  #header {
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ----------------------------------------MEDIA LARGE------------------------------------------ */
+@media (min-width: 1200px) {
+  /* ----------------------------layout----------------------- */
+  #body.indexFlex {
+    grid-template-areas:
+      "nav  main header  "
+      "nav footer footer ";
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 100vh auto;
+    background-image: url(../assets/imgs/fotoprincipalindex.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+    /* --------------------------------------BODY ------------------------------------------ */
+    #body.indexFlex #main section {
+      max-height: 60vh;
+      border: solid red;
+    }
+  
+    #body.indexFlex .divImagenPrincipal {
+      position: absolute;
+      top: -5%;
+      left: 7vw;
+      max-width: 43vw;
+      margin-left: 5vw;
+      border: solid greenyellow;
+
+    }  
+
+  /* --------------------------------------MAIN ------------------------------------------ */
+   .indexFlex #main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: solid;
+    margin-left: 1vw;
+   }
+
+  /* -------------------------------------HEADER------------------------------------------ */
+  #header {
+    background-size: 0;
+  }
+
+
+  /* -------------------------------------NAV------------------------------------------ */
+  #nav {
+    width: 180px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ulNav {
+    display: block;
+  }
+
+  #nav button {
+    display: none;
+  }
+
+  .ulNav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .ulNav li a::before {
+    font-size: 2rem;
+  }
+
+
+  /* ------------------------------------FOOTER------------------------------------------ */
+  #body.indexFlex footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+
+  #redes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #redes div {
+    width: 100%;
+  }
+
+  #redes div img {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer h4 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20%;
+  }
+}

@@ -1,0 +1,529 @@
+@font-face {
+  font-family: MiFuente;
+  src: url(../assets/fonts/airstrike.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;500;800&family=Mukta:wght@600;800&display=swap");
+/* font-family: 'Gemunu Libre', sans-serif;
+font-family: 'Mukta', sans-serif; */
+
+/* -----------------------------VARIABLES-------------------------------- */
+:root {
+  --colorPrincipal: rgb(191, 95, 0);
+  --naranjaCh: rgb(241, 122, 2);
+  --colorVerde: rgb(143, 191, 0);
+  --grisClaro: rgb(223, 217, 217);
+  --grisOscuro: rgb(131, 127, 127);
+  --verdeCh: rgb(193, 241, 47);
+  --negro: rgb(0, 0, 0);
+  --blanco: rgb(252, 250, 250);
+  --minvh: 100vh;
+}
+/* ---------------------------  Estilos generales------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontGeneral);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* ----------------------------layout----------------------- */
+body {
+  font-family: "Gemunu Libre", sans-serif;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  background-color: var(--negro);
+  color: var(--grisClaro);
+  height: var(--minvh);
+  display: grid;
+  grid-template-areas:
+    "header "
+    "main "
+    "footer "
+    "nav";
+  grid-template-columns: auto;
+  grid-template-rows: 30vh auto auto auto;
+}
+
+#header {
+  grid-area: header;
+}
+#idNav {
+  grid-area: nav;
+}
+#main {
+  grid-area: main;
+}
+#footer {
+  grid-area: footer;
+}
+
+/* --------------------------------------HEADER------------------------------------------ */
+#header {
+  background-image: url(../assets/imgs/fotoprincipalindex.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+.divImagenPrincipal {
+  width: 70%;
+}
+
+h1,
+h2 {
+  font-family: MiFuente;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+h1 {
+  font-size: min(2rem + 4vw);
+  color: var(--colorPrincipal);
+  text-shadow: -1px -1px 0px var(--blanco);
+  margin-top: 3vw;
+}
+
+h2 {
+  font-size: min(1.5rem + 3vw);
+  color: var(--colorVerde);
+}
+
+/* ---------------------------------------------MAIN ------------------------------------------ */
+#main {
+  text-align: center;
+}
+
+#main div {
+  text-align: center;
+  padding: 3%;
+ }
+ 
+
+#nav,
+#body .divh3,
+.mainPrecios section .divAbsolut,
+.mainContacto .sectionForm form,
+.sectionNews form {
+  background: var(--colorPrincipal)
+    linear-gradient(
+      130deg,
+      var(--colorVerde) 10%,
+      var(--colorPrincipal) 70%,
+      var(--colorVerde)
+    );
+}
+
+.overflow {
+  font-size: min(1rem + 0.5vw);
+  overflow: auto;
+}
+
+#logo {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------FOOTER CONTACTO------------------------------------------ */
+footer {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+footer h4 {
+  font-family: miFuente;
+  margin: 5% auto;
+  font-size: min(2rem + 1vw);
+  letter-spacing: 0.3rem;
+  text-shadow: 1px 1px 0 var(--naranjaCh);
+  width: 100%;
+}
+
+.imgfooter {
+  max-width: 5vw;
+}
+
+#contacto {
+  display: grid;
+  grid-template-columns: 5% 1fr;
+  row-gap: 3%;
+  text-align: left;
+  width: 400px;
+  height: 20vh;
+  margin: 3vw auto;
+  font-size: min(1rem + 0.5vw);
+  justify-content: center;
+  align-content: center;
+}
+
+#contacto p,
+.mailto {
+  margin: 0 11% 0 11%;
+}
+
+.mailto {
+  color: var(--verdech);
+}
+
+/* -----------------------------------------FOOTER REDES ------------------------------------------------ */
+#redes {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+
+#redes div {
+  width: 100%;
+  margin-bottom: 1vw;
+}
+
+#redes div img {
+  width: 5vh;
+}
+
+/* ---------------------------------------------NAV------------------------------------------ */
+#idNav {
+  position: relative;
+}
+
+#nav {
+  width: 100%;
+  max-height: auto;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ulNav {
+  display: none;
+}
+
+.ulNav li {
+  line-height: min(2rem + 0.5vw);
+}
+
+.ulNav a {
+  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  font-size: min(1.5rem + 0.5vw);
+  letter-spacing: 0.3rem;
+  text-shadow: 0.5rem 0.5rem 1rem var(--negro);
+  margin: 0.5rem;
+}
+
+.ulNav li:first-child a::before {
+  content: "😎";
+  margin-right: 1rem;
+}
+
+.ulNav li:nth-child(2) a::before {
+  content: "🤩";
+  margin-right: 1rem;
+}
+
+.ulNav li:nth-child(3) a::before {
+  content: "💪";
+  margin-right: 1rem;
+}
+
+#nav .ulNav li:nth-child(4) a::before {
+  content: "😁";
+  margin-right: 1rem;
+}
+
+.ulNav li:nth-child(5) a::before {
+  content: "🤙";
+  margin-right: 1rem;
+}
+
+#nav button {
+  border: solid;
+  align-self: end;
+}
+
+button img {
+  width: 5vh;
+}
+
+#nav:hover .ulNav {
+  display: block;
+}
+
+.ulNav a:hover{ align-items: flex-start;
+ color:var(--negro);
+}
+
+/* ----------------------------------PAGINA INSTALACIONES----------------------------- */
+.mainInstalciones,
+.mainclases,
+.mainPrecios,
+.mainContacto {
+  padding: 10%;
+}
+
+.divh3 {
+  min-height: 200px;
+  max-height: 300px;
+  font-size: min(1rem + 1.5vw);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+h3 {
+  color: black;
+  font-family: "Mukta", sans-serif;
+  font-weight: 800;
+}
+
+#parrafoPrincipal {
+  font-size: min(1rem + 1.5vw);
+  margin-bottom: 5%;
+}
+
+.imgInstalaciones div {
+  border-radius: 10px 10px 100px;
+  padding: 5%;
+  margin-bottom: 10%;
+  height: 100%;
+}
+
+.imgInstalaciones div p {
+  font-size: min(1rem + .5vh);
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgInstalaciones div img {
+  width: 100%;
+  border-radius: 10px 10px 100px;
+  margin-bottom: 3%;
+}
+
+.imgInstalaciones div:nth-child(even) {
+  border: var(--colorPrincipal) solid 3px;
+  box-shadow: 10px 10px 30px var(--colorPrincipal);
+}
+
+.imgInstalaciones div:nth-child(odd) {
+  border: var(--colorVerde) solid 3px;
+  box-shadow: 5px 5px 30px var(--colorVerde);
+}
+
+.imgInstalaciones p{
+  height: 20%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+/* -----------ANIMACION------------- */
+
+
+@keyframes colorFondo {
+  0%, 90% {
+    background-color: var(black);
+  }
+  20% {
+    background-color: var(--colorPrincipal) ;
+    color: var(--blanco);
+  }
+  45%{
+    background-color: var(--colorVerde);
+    color: black;
+  }
+}
+
+.imgInstalaciones p{
+  animation: colorFondo;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 3s;
+}
+
+/* ----------------------------------PAGINA CLASES----------------------------- */
+.mainClases > p {
+  font-size: min(1rem + 2vw);
+  margin-bottom: 2vw;
+}
+#imgClases div {
+  width: 90%;
+  height: auto;
+  margin: 3vw auto;
+  padding: 2vw;
+  text-align: center;
+  border: 5px solid var(--colorPrincipal);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px var(--colorPrincipal) inset,
+    -5px -5px 15px var(--colorPrincipal) inset;
+}
+
+#imgClases div img {
+  max-width: 80%;
+  border-radius: 15px;
+  margin-top: 10%;
+}
+
+#imgClases div p {
+  width: 60%;
+  margin: 10% auto;
+  color: var(--negro);
+  background-color: var(--colorVerde);
+  font-size: min(1rem + 0.3vw);
+  padding: 2vw;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -----------------ANIMACION-------------------- */
+@keyframes borde {
+  from {
+    box-shadow: 5px 5px 15px var(--colorPrincipal) ,
+    -5px -5px 15px var(--colorVerde);
+    background-color: var(--colorVerde);
+    color: var(--negro);
+  }
+  to {
+    box-shadow: 20px 20px 50px var(--colorVerde) ,
+    -10px -10px 30px var(--colorVerde),
+    5px 5px 15px var(--colorVerde) inset ,
+    -5px -5px 15px var(--colorVerde) inset;
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+}
+
+#imgClases div p{
+  animation: borde;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+
+/* ----------------------------------PAGINA PRECIOS----------------------------- */
+.mainPrecios section > div {
+  min-width: 90%;
+  height: 400px;
+  border: var(--colorVerde) double 10px;
+  margin: 10% auto;
+  font-size: min(1.5rem + 0.5vw);
+  text-align: center;
+  padding: 3vw 5% 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20%;
+}
+
+.mainPrecios section .divAbsolut {
+  height: 15%;
+  min-width: 80%;
+  position: absolute;
+  top: -10%;
+  left: 10%;
+  right: 10%;
+  padding: 5%;
+  color: black;
+  font-family: miFuente;
+  letter-spacing: 0.2rem;
+  font-size: min(1rem + 1.5vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainPrecios .divConPrecio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+.mainPrecios .divConPrecio img {
+  width: min(1rem + 5vh);
+  margin-right: 5%;
+}
+
+/* ----------------------------------PAGINA CONTACTO----------------------------- */
+.mainContacto .sectionForm form,
+.sectionNews form {
+  width: 100%;
+  color: var(--blanco);
+  font-size: min(1.5rem + 0.5vw);
+  margin: 3% auto;
+  min-width: 80%;
+  padding: 2vw;
+  border-radius: 10px;
+}
+
+.mainContacto .mainContacto .sectionForm form label {
+  display: block;
+  border: 1px;
+}
+
+.mainContacto .sectionForm form input,
+.mainContacto .sectionForm form select,
+.mainContacto .sectionNews form input {
+  width: 100%;
+  margin-bottom: 5%;
+  font-size: min(1rem + 0.5vw);
+  padding: 3%;
+  background-color: var(--grisClaro);
+  border: 2px solid var(--colorPrincipal);
+  margin-top: 1%;
+}
+
+.mainContacto .sectionForm form input,
+.sectionNews form input {
+  border-radius: 10px;
+}
+
+.mainContacto iframe {
+  margin: 4% auto;
+  border-radius: 10px;
+  height: 60%;
+  max-height: 400px;
+}
+
+.mainContacto .sectionNews form {
+  height: 17vw;
+  max-height: 263px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainContacto .sectionNews form input {
+  margin-top: 5%;
+}
