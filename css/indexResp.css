@@ -25,26 +25,33 @@
     /* --------------------------------------BODY ------------------------------------------ */
     #body.indexFlex #main section {
       max-height: 60vh;
-      border: solid red;
+      font-size: 20px
     }
   
     #body.indexFlex .divImagenPrincipal {
+      width: 600PX;
       position: absolute;
-      top: -5%;
-      left: 7vw;
-      max-width: 43vw;
-      margin-left: 5vw;
-      border: solid greenyellow;
-
+      top: -10PX;
+      left: 250PX;
     }  
+
+    #body.indexFlex .divImagenPrincipal h1{
+      font-size: 100px;
+    }
+
+    #body.indexFlex .divImagenPrincipal h2{
+      font-size: 80px;
+    }
 
   /* --------------------------------------MAIN ------------------------------------------ */
    .indexFlex #main{
+    color: var(--blanco);
+    width: 600PX;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: solid;
-    margin-left: 1vw;
+    margin-left: 70px;
+    padding: 10px 0 20px 0;
    }
 
   /* -------------------------------------HEADER------------------------------------------ */
