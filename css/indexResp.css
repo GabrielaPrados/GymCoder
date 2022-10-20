@@ -32,12 +32,14 @@
   #body.indexFlex .divImagenPrincipal {
     width: 600px;
     position: absolute;
-    top: -10px;
+    top: 5px;
     left: 250px;
+    height: 300px;
   }
 
   #body.indexFlex .divImagenPrincipal h1 {
     font-size: 100px;
+    margin: 0; 
   }
 
   #body.indexFlex .divImagenPrincipal h2 {
@@ -50,8 +52,9 @@
     width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: start;
     margin-left: 70px;
+    margin-top: 300PX;
     padding: 10px 0 20px 0;
   }
 
