@@ -25,14 +25,14 @@
 
   /* --------------------------------------BODY ------------------------------------------ */
   #body.indexFlex #main section {
-    max-height: 60vh;
+    height: 60vh;
     font-size: 20px;
   }
 
   #body.indexFlex .divImagenPrincipal {
     width: 600px;
     position: absolute;
-    top: 5px;
+    top: 25px;
     left: 250px;
     height: 300px;
   }
@@ -53,9 +53,9 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-left: 70px;
-    margin-top: 300PX;
+    margin:300px 0 70px 70px;
     padding: 10px 0 20px 0;
+    height: 700px;
   }
 
   /* -------------------------------------HEADER------------------------------------------ */
@@ -97,7 +97,7 @@
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    margin-top: 10%;
+    margin-top: 250px;
   }
 
   #redes {
