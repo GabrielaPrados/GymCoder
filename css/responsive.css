@@ -18,6 +18,20 @@
     padding: 3%;
   }
 
+  .mainContacto .sectionForm form {
+    height: 630px;
+  }
+
+  .mainContacto iframe {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .mainContacto .sectionNews form {
+    height: 200px;
+    margin: 0;
+  }
+
   /* ---------------------------------------------NAV------------------------------------------ */
   #nav {
     width: 180px;
@@ -84,6 +98,18 @@
     padding-bottom: 10%;
   }
 
+  #sectionPrecios > div {
+    padding-top: 70px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #sectionPrecios .alignSelf {
+    justify-content: center;
+    padding-top: 0;
+  }
+
   .mainContacto {
     grid-template-columns: 1fr 1fr;
   }
@@ -141,11 +167,29 @@
   /* -----------------------------------GRID PAGINA PRECIOS--------------------------------- */
   .mainPrecios section .divAbsolut {
     font-size: min(1rem + 1vw);
+    padding: 10px;
   }
 
-  /* ----------------------------------GRID PAGINA PRECIOS--------------------------------- */
+  #sectionPrecios > div {
+    height: 450px;
+  }
+
+  /* ----------------------------------GRID PAGINA CONTACTO--------------------------------- */
   .mainContacto .sectionForm form,
   .mainContacto iframe {
     margin-top: 0;
+  }
+
+  .mainContacto .sectionForm form {
+    height: 750px;
+  }
+
+  .mainContacto iframe {
+    height: 600px;
+    margin-bottom: 83px;
+  }
+
+  .mainContacto .sectionNews form {
+    height: 300px;
   }
 }

@@ -8,6 +8,7 @@
 }
 
 /* ----------------------------------------MEDIA LARGE------------------------------------------ */
+
 @media (min-width: 1200px) {
   /* ----------------------------layout----------------------- */
   #body.indexFlex {
@@ -22,43 +23,42 @@
     background-repeat: no-repeat;
   }
 
-    /* --------------------------------------BODY ------------------------------------------ */
-    #body.indexFlex #main section {
-      max-height: 60vh;
-      font-size: 20px
-    }
-  
-    #body.indexFlex .divImagenPrincipal {
-      width: 600PX;
-      position: absolute;
-      top: -10PX;
-      left: 250PX;
-    }  
+  /* --------------------------------------BODY ------------------------------------------ */
+  #body.indexFlex #main section {
+    max-height: 60vh;
+    font-size: 20px;
+  }
 
-    #body.indexFlex .divImagenPrincipal h1{
-      font-size: 100px;
-    }
+  #body.indexFlex .divImagenPrincipal {
+    width: 600px;
+    position: absolute;
+    top: -10px;
+    left: 250px;
+  }
 
-    #body.indexFlex .divImagenPrincipal h2{
-      font-size: 80px;
-    }
+  #body.indexFlex .divImagenPrincipal h1 {
+    font-size: 100px;
+  }
+
+  #body.indexFlex .divImagenPrincipal h2 {
+    font-size: 80px;
+  }
 
   /* --------------------------------------MAIN ------------------------------------------ */
-   .indexFlex #main{
+  .indexFlex #main {
     color: var(--blanco);
-    width: 600PX;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 70px;
     padding: 10px 0 20px 0;
-   }
+  }
 
   /* -------------------------------------HEADER------------------------------------------ */
   #header {
     background-size: 0;
   }
-
 
   /* -------------------------------------NAV------------------------------------------ */
   #nav {
@@ -87,7 +87,6 @@
   .ulNav li a::before {
     font-size: 2rem;
   }
-
 
   /* ------------------------------------FOOTER------------------------------------------ */
   #body.indexFlex footer {
