@@ -46,12 +46,6 @@
     padding: 0 2vw;
   } 
 
-   .indexFlex #main #logo img{
-    margin: 0;
-    padding: 0;
-  }
-
-
   /* -------------------------------------NAV------------------------------------------ */
   #nav {
     width: 180px;
