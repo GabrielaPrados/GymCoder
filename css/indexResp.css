@@ -13,10 +13,11 @@
   /* ----------------------------layout----------------------- */
   #body.indexFlex {
     grid-template-areas:
-      "nav  main header  "
-      "nav footer footer ";
-    grid-template-columns: 180px 1fr 1fr;
-    grid-template-rows: 100vh auto;
+      "nav  header  "
+      "nav  main  "
+      "nav footer  ";
+    grid-template-columns: 180px 1fr ;
+    grid-template-rows: 40vh 60vh auto;
     background-image: url(../assets/imgs/fotoprincipalindex.jpg);
     background-position: center;
     background-size: cover;
@@ -26,45 +27,28 @@
   /* --------------------------------------BODY ------------------------------------------ */
   #body.indexFlex #main section {
     font-size: 1rem;
-  }
-
-  #body.indexFlex .divImagenPrincipal {
-    width: 800px;
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    height: 250px;
-  }
-
-  #body.indexFlex .divImagenPrincipal h1 {
-    font-size: 5rem;
-    margin: 0; 
-  }
-
-  #body.indexFlex .divImagenPrincipal h2 {
-    font-size: 4rem;
+    color: var(--blanco);
   }
 
     /* -------------------------------------HEADER------------------------------------------ */
     #header {
       background-size: 0;
+      width: 50vw;
     }
-  
+
+    #header .divImagenPrincipal{
+      width: 100%;
+    }
 
   /* --------------------------------------MAIN ------------------------------------------ */
-  .indexFlex #main {
-    color: var(--blanco);
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin:300px 0 70px 70px;
-    padding: 10px 0 20px 0;
-    height: 700px;
-  }
+   .indexFlex #main {
+    width: 50vw;
+    padding: 0 2vw;
+  } 
 
-  .indexFlex #main #logo img{
-    width: 300px;
+   .indexFlex #main #logo img{
+    margin: 0;
+    padding: 0;
   }
 
 
